@@ -1,0 +1,38 @@
+{% extends 'base2.html' %}
+{% load static %}
+
+{% block title %}
+   <title>Home Page</title>
+   <!--<link rel="shortcut icons" href="images\logo.png"></link>-->
+    
+   
+ {% endblock title %}
+ 
+
+{% block content %}
+<div class="container">
+   <div class="row mt-5" >
+     <div class="col-lg-4">
+      <img src="{% static 'images/pic3.jpg' %}" alt="Notes" class="rounded-lg shadow border border-primary" height="200" width="300">
+       <center class="mt-2"><h2>Goa</h2></center>
+     </div>
+     <div class="col-lg-4">
+      <img src="{% static 'images/pic3.jpg' %}" alt="Notes" class="rounded-lg shadow border border-primary" height="200" width="300">
+      <center class="mt-2"><h2>Goa</h2></center>
+     </div>
+     <div class="col-lg-4">
+      <img src="{% static 'images/pic3.jpg' %}" alt="Notes" class="rounded-lg shadow border border-primary" height="200" width="300">
+       <center class="mt-2"><h2>Goa</h2></center>
+     </div>
+   </div>
+   <div class="row mt-5">
+     <div class="col-md-10 offset-md-1">
+     <center><p class="h2 mt-3 text-primary"> Quick and Easy to the use,Anytime and Anywhere</p></center>
+     <center><p class="h5 mt-3 text-success"> Taskmate lets you keep track of your Task in one place</p></center>
+     <center><a href="{% url 'first' %}"><abbr title="click me"> <button type="button" class="btn btn-primary btn-lg mt-3 shadow">Lets Get Started</button></abbr></a></center>
+    </div>
+</div>
+<br>
+<br>
+<h6>copyrigth &copy 2021</h6> 
+{% endblock content %}
